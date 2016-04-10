@@ -1,0 +1,15 @@
+---
+---
+
+<div class="post-container">
+    {% for update in site.categories.updates limit: 5 %}
+    <div class="post-wrap">
+
+        <h2 class="post-title">{{ update.title }}</h2>
+        <p>{{ update.date | date: "%b %d, %Y"}}</p>
+        <p>{{ update.content }}</p>
+        <img class="post-image">
+
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,97 @@
+.section-about
+    height: 720px
+    width: 100%
+
+.about-content
+    height: 720px
+    width: 75%
+    float: right
+    position: relative
+    overflow: hidden
+
+    .about-content-wrap
+        width: 100%
+        height: 720px
+        position: relative
+        text-align: center
+        display: none
+        @extend %animationstart_bounceOut
+        margin: auto
+        &.active-about
+            +display(block)
+            @extend %bounceOut
+
+
+        .about-background
+            padding-top: 20px
+
+            margin: auto
+            position: relative
+            text-align: center
+
+            svg
+                +size(60%)
+                opacity: 0.3
+                path, polygon
+                    fill: #faa71a
+
+            .about-description-wrap
+                +position(absolute, 0% null null null)
+                width: 100%
+                margin: 10px 0 10px 0
+
+                h4
+                    text-transform: uppercase
+                    font-weight: 700
+                    letter-spacing: 1px
+                    color: #1d4e7b
+                    font-size: 28px
+                    margin: 10px 0 10px 0
+
+                .about-description
+                    width: 100%
+                    height: 720px
+                    p
+                        text-align: justify
+                        font-size: 20px
+                        line-height: 36px
+                        font-weight: 300
+                        padding: 30px 30px 10px 30px
+                        color: #1d4e7b
+                        strong
+                            font-weight: 700
+                    iframe
+                        +size(90% 80%)
+                    img
+                        +size(70% 85%)
+
+h3
+    float: left
+    width: 25%
+    text-align: center
+    margin: 20px 0 0 0
+    text-transform: uppercase
+    color: #faa71a
+
+.about-icon-wrap
+    height: 720px
+    width: 25%
+    margin: 0
+    padding: 0
+    float: left
+
+    .about-icon
+        width: 100%
+        height: 15%
+        margin: 10% 0%
+        cursor: pointer
+        border-right: 5px solid transparent
+        opacity: 0.5
+        background:
+            // image: url(/assets/img/logos/history.png)
+            size: contain
+            repeat: no-repeat
+            position: center
+        &.active-about
+            border-right: 5px solid  #00426b
+            opacity: 1

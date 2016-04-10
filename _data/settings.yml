@@ -1,0 +1,10 @@
+# July 3rd, 2014
+date_format: 'ordinal'
+# 2:08 pm
+time_format: '%-I:%M %P'
+
+kicker: Develop and Design by
+designers:
+- {url: 'https://web.facebook.com/realdjclone', name: Ace Lintag}
+- {url: 'https://web.facebook.com/spikewun', name: Jeffrey Ramos}
+- {url: '#', name: Glenn Gustillo}

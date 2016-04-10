@@ -1,0 +1,15 @@
+---
+---
+
+<div class="post-container">
+    {% for event in site.categories.events limit: 5 %}
+    <div class="post-wrap">
+
+        <h2 class="post-title">{{ event.title }}</h2>
+        <p>{{ event.date | date: "%b %d, %Y"}}</p>
+        <p>{{ event.content }}</p>
+        <img class="post-image">
+
+    </div>
+    {% endfor %}
+</div>

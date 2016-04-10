@@ -1,0 +1,19 @@
+#build Setting
+markdown: kramdown
+permalink: pretty
+
+# your url
+#url: "https://realdjclone.github.io"
+
+# the base hostname & protocol for your site
+#baseurl: "/barangay-obrero/"
+
+exclude: ['README.md']
+
+port: 8080
+
+highlighter: rouge
+
+sass:
+    sass_dir: assets/css
+    stytle: :nested

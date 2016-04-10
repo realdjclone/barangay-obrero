@@ -1,0 +1,24 @@
+################
+#### Header ####
+################
+
+    # Images
+    bg-img: 'obrero2.jpg'
+    brgy-logo: 'brgylogo.png'
+    qc-logo: 'qclogo.png'
+
+    # Site Title
+    title: Barangay Obrero
+    description: Official Website
+
+################
+#### Footer ####
+################
+
+    # Links
+    links:
+    - {name: Like Us On Facebook, url: 'https://web.facebook.com/barangayObrero2K14?fref=ts'}
+    - {name: E-Mail Us On Gmail, url: '#'}
+
+    # Copyright
+    copyright: All Content Copyright © 2016 Barangay Obrero, Quezon City. Alrights Reserved.

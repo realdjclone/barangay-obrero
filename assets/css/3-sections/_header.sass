@@ -1,0 +1,84 @@
+header
+    height: 720px
+
+    background:
+        image: url(../img/#{$bgimg})
+        size: cover
+        position: center center
+
+    .brgy-logo
+
+        float: left
+        margin: 20px 0 20px 50px
+        +size(100px)
+
+        background:
+            image: url(../img/#{$brgylogo})
+            size: cover
+            position: center center
+            repeat: no-repeat
+
+    .qc-logo
+
+        float: right
+        margin: 20px 50px 20px 0
+        +size(100px 100px)
+
+        background:
+            image: url(../img/#{$qclogo})
+            size: contain
+            position: center center
+            repeat: no-repeat
+
+    // nav
+    //     float: right
+    //     margin: 55px 55px 0 55px
+    //
+    //     a
+    //         display: inline-block
+    //         margin-left: 20px
+    //         @extend %small-bold
+    //         +transition(800ms)
+    //
+    //         &:hover
+    //             color: #1d4e7b
+
+    h1
+        text-align: center
+        color: white
+        text-transform: uppercase
+        letter-spacing: 4px
+        margin-bottom: 20px
+        padding-top: 100px
+        clear: both
+
+        a
+            color: #cecece
+            text-decoration: none
+
+            &:hover
+                text-decoration: none
+                color: #fdfdfd
+
+        font:
+            size: 52px
+            weight: 700
+
+        span
+            display: inline-block
+            padding: 1.5em
+            background: rgba(0,0,0,0.7)
+            opacity: 1
+
+        .kicker
+            text-align: center
+            text-transform: uppercase
+            letter-spacing: 0.05em
+            color: #fdfdfd
+            line-height: 1
+            border-top: 3px solid #fdfdfd
+            padding-top: 5px
+
+            font:
+                size: 32px
+                weight: 300

@@ -1,0 +1,19 @@
+<footer>
+
+    <div class="lockup">
+        <div class="brgy-logo"></div>
+            <div class="content-wrap">
+                <nav>
+                    {% for link in site.data.main.links %}
+                        <a href="{{ link.url }}">{{ link.name }}</a>
+                    {% endfor %}
+                </nav>
+                <p class="copyright">{{ site.data.main.copyright }}<br>{{ site.data.settings.kicker }}:
+                    {% for designer in site.data.settings.designers %}
+                        <a href="{{ designer.url }}">{{ designer.name }}</a>
+                    {% endfor %}
+                </p>
+            </div>
+    </div>
+
+</footer>
