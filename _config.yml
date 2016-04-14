@@ -1,9 +1,9 @@
 #build Setting
 markdown: kramdown
-permalink: pretty
-
-# your url
 # url: "https://realdjclone.github.io"
+# permalink: pretty
+# your url
+
 
 # the base hostname & protocol for your site
 # baseurl: /barangay-obrero
