@@ -1,19 +1,10 @@
-<section class="section-posts">
-    <a href="index.html">
-        <div class="home-wrap">
-            {% include icons/icon-back.html %}
-            <h3 class="home">Back</h3>
-        </div>
-    </a>
-    <div class="post-content">
-        <h3 class="post">{{ site.data.main.news-name }}:</h3>
-        <div class="post-wrap">
-            {% for new in site.categories.news limit: 3  %}
-            <h4 class="post-title">{{ new.title }}</h4>
-            <div class="post-date">{{ new.date | date: "%b %d, %Y" }}</div>
-            <div class="post-description">{{ new.content }}</div>
-            <div class="post-border"></div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
+<div class="news-wrap">
+    <h3 class="news">News:</h3>
+    {% for new in site.categories.news limit: 5 %}
+    <h4 class="news-title">{{ new.title }}</h4>
+    <div class="news-date">{{ new.date | date: "%b %d, %Y"}}</div>
+    <div class="news-description">{{ new.content }}</div>
+    <div class="border"></div>
+    {% endfor %}
+    <a href="news.html" class="news-button">NEWS</a>
+</div>
