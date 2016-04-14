@@ -3,8 +3,8 @@ markdown: kramdown
 # url: "https://realdjclone.github.io"
 # permalink: pretty
 # your url
-
-
+gems: [jekyll-paginate]
+paginate: 3
 # the base hostname & protocol for your site
 # baseurl: /barangay-obrero
 
