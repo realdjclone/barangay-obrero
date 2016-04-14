@@ -3,10 +3,10 @@ markdown: kramdown
 permalink: pretty
 
 # your url
-#url: "https://realdjclone.github.io"
+# url: "https://realdjclone.github.io"
 
 # the base hostname & protocol for your site
-#baseurl: "/barangay-obrero/"
+# baseurl: /barangay-obrero
 
 exclude: ['README.md']
 

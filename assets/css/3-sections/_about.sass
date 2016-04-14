@@ -1,6 +1,7 @@
 .section-about
     height: 720px
     width: 100%
+    clear: both
 
 .about-content
     height: 720px
@@ -64,14 +65,19 @@
                         +size(90% 80%)
                     img
                         +size(70% 85%)
-
-h3
-    float: left
-    width: 25%
-    text-align: center
+.about-wrap
+    width: 100%
+    height: 65px
     margin: 20px 0 0 0
-    text-transform: uppercase
-    color: #faa71a
+    svg
+        margin-left: 40px
+        float: left
+        fill: #faa71a
+    .about
+        float: left
+        margin: 20px 0 0 20px
+        text-transform: uppercase
+        color: #faa71a
 
 .about-icon-wrap
     height: 720px
