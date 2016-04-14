@@ -1,0 +1,7 @@
+###############
+## Slideshow ##
+###############
+    slideshows:
+    - { img: ,
+        title: ,
+        description: }

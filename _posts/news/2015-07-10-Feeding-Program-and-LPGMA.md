@@ -1,7 +1,14 @@
 ---
+# Title of Your Post
 title: Feeding Program & LPGMA
+# Category of Your Post News or Events
 category: news
 ---
+
+<!-- Image to post -->
+![News](assets/img/news/obrero2.jpg)
+
+<!-- Image to post --><!-- Image to post --><!-- Image to post -->
 
 (JULY 6, 2015 @ SOUTH 17 FR. MARTINEZ.)
 

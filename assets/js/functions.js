@@ -1,9 +1,9 @@
 $(function() {
     smoothScrool(300);
-    menuBelt();
-    menuLoad();
+    // menuBelt();
+    // menuLoad();
     aboutStuff();
-    slideShow();
+    // slideShow();
 });
 
 function smoothScrool (duration) {
@@ -21,46 +21,38 @@ function smoothScrool (duration) {
 }
 
 
-function menuBelt() {
-
-    $('.thumb-unit').click(function() {
-
-        $('.menu-belt').css('left','-100%');
-        $('.menu-container').show();
-        $('.section-about').hide(800);
-
-    });
-
-    $('.menu-back').click(function() {
-        $('.menu-belt').css('left','0%');
-        $('.menu-container').hide(800);
-        $('.section-about').show(800);
-
-    });
-}
-
-function menuLoad() {
-
-    $.ajaxSetup ({ cache: true });
-
-    $('.thumb-unit').click(function() {
-
-        var $this = $(this),
-            newTitle = $this.find('strong').text(),
-            newFolder = $this.data('folder'),
-            spinner = '<div class="loader">Loading...</div>',
-            newHTML = '/menu/'+ newFolder +'.html';
-        $('.menu-load').html(spinner).load(newHTML);
-        $('.menu-title').text(newTitle);
-    });
-}
-
-// function slideShow() {
+// function menuBelt() {
 //
-//     $('.slideshow-pics').first().addClass('.active-slideshow')
-//     $('.slideshow-overlay').first().addClass('.active-slideshow')
-//     $('.slideshow-thumb').first().addClass('.active-slideshow')
+//     $('.thumb-unit').click(function() {
 //
+//         $('.menu-belt').css('left','-100%');
+//         $('.menu-container').show();
+//         $('.section-about').hide(800);
+//
+//     });
+//
+//     $('.menu-back').click(function() {
+//         $('.menu-belt').css('left','0%');
+//         $('.menu-container').hide(800);
+//         $('.section-about').show(800);
+//
+//     });
+// }
+//
+// function menuLoad() {
+//
+//     $.ajaxSetup ({ cache: true });
+//
+//     $('.thumb-unit').click(function() {
+//
+//         var $this = $(this),
+//             newTitle = $this.find('strong').text(),
+//             newFolder = $this.data('folder'),
+//             spinner = '<div class="loader">Loading...</div>',
+//             newHTML = '/category/'+ newFolder;
+//         $('.menu-load').html(spinner).load(newHTML);
+//         $('.menu-title').text(newTitle);
+//     });
 // }
 
 function aboutStuff() {

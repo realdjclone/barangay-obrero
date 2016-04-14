@@ -5,12 +5,12 @@
     <div class="menu-belt">
         <div class="thumb-wrap">
             <div class="thumb-container">
-                {% for category in site.data.posts.categories %}
-                <div class="thumb-unit" data-folder="{{ category.folder }}">
-                    <img src="assets/img/{{ category.image }}" alt="{{ category.title }}" />
+                {% for postnav in site.data.category.postnavs %}
+                <div class="thumb-unit" data-folder="{{ postnav.folder }}">
+                    <img src="assets/img/{{ postnav.image }}" alt="{{ postnav.title }}" />
                     <div class="thumb-overlay">
-                        <strong>{{ category.title }}</strong>
-                        <div class="thumb-icon">{% include icons/{{ category.icon }} %}</div>
+                        <strong>{{ postnav.title }}</strong>
+                        <div class="thumb-icon">{% include icons/{{ postnav.icon }} %}</div>
                     </div>
                 </div>
                 {% endfor %}
@@ -19,7 +19,7 @@
 
         <div class="menu-wrap">
             <div class="menu-container">
-               <div class="menu-back">{% include icons/icon-back.html %}</div>
+                <div class="menu-back">{% include icons/icon-back.html %}</div>
                 <h4 class="menu-title"></h4>
                 <div class="menu-load"></div>
             </div>

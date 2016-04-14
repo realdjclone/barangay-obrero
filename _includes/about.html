@@ -1,4 +1,8 @@
 <section class="section-about">
+    <div class="about-wrap">
+        {% include icons/icon-about.html %}
+        <h3 class="about">About Us</h3>
+    </div>
 
     <div class="about-content">
         {% for category in site.data.about.categories %}
@@ -14,7 +18,6 @@
         </div>
         {% endfor %}
     </div>
-    <h3>About Us</h3>
     <div class="about-icon-wrap">
         {% for category in site.data.about.categories %}
             <div class="about-icon" style="background-image: url(assets/img/logos/{{ category.icon }})"></div>

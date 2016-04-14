@@ -1,9 +1,0 @@
-##################
-##  Categories  ##
-##################
-
-    # Post Navigation
-    categories:
-    - {title: News, image: news.jpg, icon: icon-news.html, folder: news}
-    - {title: Events, image: events.jpg, icon: icon-events.html, folder: events}
-    - {title: Updates, image: updates.jpg, icon: icon-updates.html, folder: updates}
