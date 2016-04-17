@@ -1,0 +1,19 @@
+<section class="section-posts">
+    <a href="index.html">
+        <div class="home-wrap">
+            {% include icons/icon-back.html %}
+            <h3 class="home">Back</h3>
+        </div>
+    </a>
+    <div class="post-content">
+        <h3 class="post">{{ site.data.settings.events-name }}:</h3>
+        <div class="post-wrap">
+            {% for event in site.categories.events %}
+            <h4 class="post-title">{{ event.title }}</h4>
+            <div class="post-date">{{ event.date | date: "%b %d, %Y" }}</div>
+            <div class="post-description">{{ event.content }}</div>
+            <div class="post-border"></div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

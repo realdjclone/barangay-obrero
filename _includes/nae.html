@@ -1,4 +1,4 @@
-<section class="section-nae">
+<section class="section-news-and-events">
 
     <div class="nae-wrap">
         {% include icons/icon-nae.html %}
@@ -6,27 +6,72 @@
     </div>
 
     <div class="nae-content">
+
+        <div id="container">
+            <div id="container-wrap">
+                <div id="slideshow" class="cycle-slideshow"
+                     data-cycle-fx = "scrollHorz"
+                     data-cycle-pause-on-hover="true"
+                     data-cycle-speed = "1000"
+                     data-cycle-timeout = "3000"
+
+                     data-cycle-caption-plugin = "caption2"
+                     data-cycle-overlay-fx-out = "slideDown"
+                     data-cycle-overlay-fx-in = "slideUp"
+
+                     data-cycle-next = "#next"
+                     data-cycle-prev = "#prev"
+                     data-cycle-manual-fx = "scrollHorz"
+                     data-cycle-manual-speed = "1000"
+                     >
+
+                    <div id="caption" class="cycle-overlay"></div>
+
+                    {% for image in site.data.slideshow.images %}
+                    <img src="slideshows/{{ image.img }}" data-cycle-title="{{ image.title }}" data-cycle-desc="{{ image.desc }}">
+                    {% endfor %}
+
+                </div>
+
+                <div id="prev">{% include icons/icon-prev.html %}</div>
+                <div id="next">{% include icons/icon-next.html %}</div>
+            </div>
+        </div>
+
+        <div class="border"></div>
+
         <div class="news-wrap">
-            <h3 class="news">News:</h3>
+            <h3 class="news">{{ site.data.settings.news-name }}:</h3>
             {% for new in site.categories.news limit: 5 %}
             <h4 class="news-title">{{ new.title }}</h4>
             <div class="news-date">{{ new.date | date: "%b %d, %Y"}}</div>
             <div class="news-description">{{ new.content }}</div>
             <div class="border"></div>
             {% endfor %}
-            <div class="news-button"><a href="news.html">See All News</a></div>
+            <div class="news-button"><a href="news.html">See All News...</a></div>
         </div>
 
 
         <div class="events-wrap">
-            <h3 class="events">Up Coming Events:</h3>
-            {% for event in site.categories.events limit: 3 %}
+            <h3 class="events">{{ site.data.settings.events-name }}:</h3>
+            {% for event in site.categories.events limit: 2 %}
             <h4 class="events-title">{{ event.title }}</h4>
             <div class="events-date">{{ event.date | date: "%b %d, %Y"}}</div>
             <div class="events-description">{{ event.content }}</div>
             <div class="border"></div>
             {% endfor %}
-            <div class="events-button"><a href="">See All Up Coming Events</a></div>
+            <div class="events-button"><a href="events.html">See All Events...</a></div>
+        </div>
+
+        <div class="activity-wrap">
+            <h3 class="activity">{{ site.data.settings.activities-name }}:</h3>
+            {% for activity in site.categories.activities limit: 2 %}
+            <h4 class="activity-title">{{ activity.title }}</h4>
+            <div class="activity-date">{{ activity.date | date: "%b %d, %Y"}}</div>
+            <div class="activity-description">{{ activity.content }}</div>
+            <div class="border"></div>
+            {% endfor %}
+            <div class="activity-button"><a href="activities.html">See All Activities...</a></div>
         </div>
 
         <div class="calendar-wrap">

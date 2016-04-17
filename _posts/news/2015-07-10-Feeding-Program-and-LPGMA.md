@@ -6,7 +6,6 @@ category: news
 ---
 
 <!-- Image to post -->
-![News](assets/img/news/obrero2.jpg)
 
 <!-- Image to post --><!-- Image to post --><!-- Image to post -->
 

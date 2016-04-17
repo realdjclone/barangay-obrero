@@ -1,7 +1,50 @@
 ###############
 ## Slideshow ##
 ###############
-    slideshows:
-    - { img: ,
-        title: ,
-        description: }
+    ##################################################
+    # for images, title, & desciption of slideshow
+    # - { img: 'image-name.jpg',
+    #     title: title of your slideshow,
+    #     desc: description of your slideshow}
+    #################################################
+
+    images:
+    - { img: 'image1.jpg',
+        title: Training on the Community Support of Infant & Young Child Feeding.,
+        desc: }
+
+    - { img: 'image2.jpg',
+        title: QC Health Workers Fair. Sponsored By Vice Mayor Joy Belmonte Aug.,
+        desc: }
+
+    - { img: 'image3.jpg',
+        title: Skills Enhancement Training Seminar of Regular BPSO- August 30.,
+        desc: }
+
+    - { img: 'image4.jpg',
+        title: Gender Fair Ordinance Consultation - Aug 14.,
+        desc: }
+
+    - { img: 'image5.jpg',
+        title: Deworming at Yakap Daycare.,
+        desc: }
+
+    - { img: 'image6.jpg',
+        title: Fire& earthquake Seminar for BHW & Purok Leaders. Sponsored by C.,
+        desc: }
+
+    - { img: 'image7.jpg',
+        title: Commemoration of the 136th birth anniversary of President Manuel Luis Quezon.,
+        desc: }
+
+    - { img: 'image8.jpg',
+        title: DISTRIBUTION OF SCHOOL ID BAGS AND UNIFORM OF YAKAP DAYCARE Sponsored by SSDD. City Hall - August 12, 2014,
+        desc: }
+
+    - { img: 'image9.jpg',
+        title: PUBLIC CONSULTATIONS GENDER FAIR Q.C. ORDINANCE - AUGUST 14, 2014,
+        desc: }
+
+    - { img: 'image10.jpg',
+        title: COMPUTER ON WHEELS- Sponsored By Councilor Bayani Hipol - July 21- August 18,. 2014,
+        desc: }

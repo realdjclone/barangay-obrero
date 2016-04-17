@@ -1,10 +1,24 @@
-# July 3rd, 2014
-date_format: 'ordinal'
-# 2:08 pm
-time_format: '%-I:%M %P'
+####################
+#### Navigation ####
+####################
 
-kicker: Develop and Design by
-designers:
-- {url: 'https://web.facebook.com/realdjclone', name: Ace Lintag}
-- {url: 'https://web.facebook.com/spikewun', name: Jeffrey Ramos}
-- {url: '#', name: Glenn Gustillo}
+    navs:
+    - {name: News and Events , url: '.section-news-and-events', icon: 'icon-nae.html'}
+    - {name: About Us, url: '.section-about-us', icon: 'icon-about.html'}
+    - {name: Contact Us, url: '#contact-us', icon: 'icon-contact.html'}
+    - {name: Hotlines and Links, url: '.section-hotlines-and-links', icon: 'icon-links.html'}
+    # - {name: Others, url: '#others', icon: ''}
+
+    news-name: News
+    events-name: Events
+    activities-name: Activities
+
+####################
+#### Developers ####
+####################
+
+    kicker: Develop and Design by
+    designers:
+    - {url: 'https://web.facebook.com/realdjclone', name: Ace Lintag}
+    - {url: 'https://web.facebook.com/spikewun', name: Jeffrey Ramos}
+    - {url: '#', name: Glenn Gustillo}
