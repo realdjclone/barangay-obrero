@@ -1,27 +1,31 @@
-<section class="section-about">
-    <div class="about-wrap">
+<section class="section-about-us">
+    <div class="about-title-wrap">
         {% include icons/icon-about.html %}
         <h3 class="about">About Us</h3>
     </div>
 
-    <div class="about-content">
-        {% for category in site.data.about.categories %}
-        <div class="about-content-wrap">
+    <div class="about-wrap">
 
-            <div class="about-background">{% include background/{{ category.image }} %}
-                <div class="about-description-wrap">
-                    <h4 class="about-title">{{ category.title }}</h4>
-                    <div class="about-description">{{ category.description }}</div>
+        <div class="about-content">
+            {% for category in site.data.about.categories %}
+            <div class="about-content-wrap">
+                <div class="about-background">{% include background/{{ category.image }} %}
+                    <div class="about-description-wrap">
+                        <h4 class="about-title">{{ category.title }}</h4>
+                        <div class="about-description">{{ category.description }}</div>
+                    </div>
                 </div>
             </div>
-
+            {% endfor %}
         </div>
-        {% endfor %}
-    </div>
-    <div class="about-icon-wrap">
-        {% for category in site.data.about.categories %}
-            <div class="about-icon" style="background-image: url(assets/img/logos/{{ category.icon }})"></div>
-        {% endfor %}
-    </div>
 
+        <div class="about-icon-wrap">
+            {% for category in site.data.about.categories %}
+            <div class="about-icon" style="background-image: url(assets/img/logos/{{ category.icon }})">
+                <div class="about-thumb">{% include background/{{ category.image }} %}</div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
 </section>

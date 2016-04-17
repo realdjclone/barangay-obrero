@@ -1,20 +1,22 @@
 header
     height: 720px
-
+    position: relative
+    overflow: hidden
     background:
-        image: url(../img/#{$bgimg})
+        image: url(../img/main/#{$bgimg})
         size: cover
-        position: center center
+        position: center
         repeat: no-repeat
+        attachment: fixed
 
     .brgy-logo
 
         float: left
-        margin: 20px 0 20px 50px
+        margin: 100px 0 20px 50px
         +size(100px)
 
         background:
-            image: url(../img/#{$brgylogo})
+            image: url(../img/main/#{$brgylogo})
             size: cover
             position: center center
             repeat: no-repeat
@@ -22,27 +24,14 @@ header
     .qc-logo
 
         float: right
-        margin: 20px 50px 20px 0
+        margin: 100px 50px 20px 0
         +size(100px 100px)
 
         background:
-            image: url(../img/#{$qclogo})
+            image: url(../img/main/#{$qclogo})
             size: contain
             position: center center
             repeat: no-repeat
-
-    // nav
-    //     float: right
-    //     margin: 55px 55px 0 55px
-    //
-    //     a
-    //         display: inline-block
-    //         margin-left: 20px
-    //         @extend %small-bold
-    //         +transition(800ms)
-    //
-    //         &:hover
-    //             color: #1d4e7b
 
     h1
         text-align: center
@@ -50,7 +39,6 @@ header
         text-transform: uppercase
         letter-spacing: 4px
         margin-bottom: 20px
-        padding-top: 100px
         clear: both
 
         a
@@ -68,7 +56,7 @@ header
         span
             display: inline-block
             padding: 5%
-            background: rgba(0,0,0,0.7)
+            background: rgba(29, 78, 123, 0.5)
             opacity: 1
 
         .kicker

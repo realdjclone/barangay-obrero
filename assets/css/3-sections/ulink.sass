@@ -1,0 +1,77 @@
+.section-hotlines-and-links
+    width: 100%
+    padding-top: 60px
+
+    .links-wrap
+        padding: 20px 0 20px 0
+        height: 65px
+        margin: 10px 0 30px 0
+        box-shadow: 2px 2px 10px rgba(0, 66, 107, 1)
+        clear: both
+        svg
+            margin-left: 40px
+            float: left
+            fill: #faa71a
+
+        .links
+            float: left
+            text-align: left
+            margin: 20px 0 0 20px
+            text-transform: uppercase
+            color: #faa71a
+
+    .links-content
+        width: 90%
+        height: auto
+        margin: 30px auto
+
+        .hotline-content
+
+            .hotline-wrap
+                height: 120px
+                width: 30%
+                margin: 20px auto
+                display: inline-block
+                clear: both
+                vertical-align: middle
+
+                .hotline-logo
+                    float: left
+                    +size(120px)
+                    +transition(800ms)
+                    margin: 0 10px 0 10px
+                    opacity: 0.5
+                    background:
+                        size: contain
+                        repeat: no-repeat
+                        position: center
+                    &:hover
+                        opacity: 1
+
+                .hotline-desc-wrap
+                    p
+                        text-align: left
+                        margin: 0 0 0 20px
+                        text-transform: uppercase
+                        color: #1d4e7b
+                        a
+                            @extend %small-bold
+                            color: #1d4e7b
+                            +transition(800ms)
+                            &:hover
+                                color: #faa71a
+
+
+        .links-other-wrap
+            .links-other-logo
+                +size(120px)
+                +transition()
+                display: inline-block
+                margin: 0 10px 0 10px
+                opacity: 0.5
+                background:
+                    size: contain
+                    repeat: no-repeat
+                    position: center
+                &:hover
+                    opacity: 1

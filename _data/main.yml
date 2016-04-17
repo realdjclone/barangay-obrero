@@ -1,11 +1,17 @@
+##############
+#### Body ####
+##############
+
+    background: 'bg02.png'
+
 ################
 #### Header ####
 ################
 
-    # Images
-    bg-img: 'obrero2.jpg'
-    brgy-logo: 'brgylogo.png'
-    qc-logo: 'qclogo.png'
+    # Background & Logo
+    background-img: 'obrero2.jpg'
+    barangay-obrero-logo: 'brgylogo.png'
+    quezon-city-logo: 'qclogo.png'
 
     # Site Title
     title: Barangay Obrero
@@ -15,10 +21,48 @@
 #### News & Events ####
 #######################
 
-    background: 'bg02.png'
     calendar: <iframe src="https://calendar.google.com/calendar/embed?title=Calendar&amp;showNav=0&amp;showPrint=0&amp;height=500&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=en.philippines%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=Asia%2FManila" style="border-width:0" width="100%" height="500" frameborder="0" scrolling="no"></iframe>
-    news-name: News
-    events-name: Events
+
+#################
+#### Contact ####
+#################
+
+#########################
+#### Hotline & Links ####
+#########################
+
+    ### Emergency Hotlines###
+    hotlines:
+        - {name: Quezon City Disaster Risk Reduction Management Council, acronym: (QCDRRMC), logo: 'qcdrrmo.png', location: Quezon City, contact: 911-1406 /912-2665 / 912-5668}
+        - {name: Police Staion 10 Kamuning, acronym: , logo: 'pnp.png', location: , contact: }
+        - {name: Bureau of Fire Protection, acronym: (BFP), logo: 'bfp.png', location: , contact: 927-4444 / 920-1378}
+
+        - {name: Philippine Red Cross, acronym: ,logo: 'prc.png', location: Quezon City, contact: 911-5061}
+        - {name: Department of Health, logo: 'doh.png', acronym: (DOH), location: , contact: }
+        - {name: National Children's Hospital, logo: 'nch.png', acronym: , location: , contact: }
+        - {name: East Avenue Medical Center, logo: 'eamc.png', acronym: (EAMC), location: , contact: }
+        - {name: Northern NCR Poison Control Center, acronym: ,logo: 'nnpcc.png'}
+
+        - {name: Department of Social Welfare and Development, acronym: (DSWD), logo: 'dswd.png'}
+        - {name: Metropolitan Manila Development Authority, acronym: (MMDA), logo: 'mmda.png'}
+        - {name: Department of public Works and Highways, acronym: (DPWH), logo: 'dpwh.png'}
+
+        - {name: Philippine Institute of Volcanology and Seismology, logo: 'phivolcs.png', acronym: (PHIVOLCS), location: , Contact: }
+        - {name: Philippine Atmospheric Geophysical and Astronominal Services Administration, logo: 'pagasa.png', acronym: (PAGASA), location: , Contact: }
+
+    ### Other Useful Links ###
+    links:
+    - {name: The Local Government of Quezon City (City Hall), logo: 'qclogo.png'}
+
+    - {name: National Statistic Office(NSO), logo: 'nso.png'}
+    - {name: Commission On Elections(COMELEC), logo: 'comelec.png'}
+    - {name: Technical Education and Skills Development Authority(TESDA), logo: 'tesda.png'}
+
+    # - {name: Philippine Children's Medical Center, logo: 'pcmc.png', acronym: , location: , contact: }
+    # - {name: Philippine Heart Center, logo: 'phc.png', acronym: , location: , contact: }
+    # - {name: National Kidney and Transplant Institute, logo: 'nkti.png', acronym: , location: , contact: }
+    # - {name: Lung Center of the Philippines, logo: 'lcp.png', acronym: , location: , contact: }
+
 ################
 #### Footer ####
 ################
