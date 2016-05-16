@@ -1,10 +1,21 @@
-<section id="section-contact-us">
+<section class="section-contact-us">
 
     <div class="contact-wrap">
         {% include icons/icon-contact.html %}
         <h3 class="contact">Contact Us</h3>
     </div>
 
-    <div class="contact-content"></div>
+    <div class="contact-content">
+        {% for content in site.data.main.contents %}
+        <div class="content-wrap">
+            <a href="{{ content.url }}"><div class="content-logo" style="background-image: url(assets/img/main/{{ content.logo }}"></div></a>
+            <div class="content-desc-wrap">
+                <p><a href="{{ content.url }}">{{ content.name }}</a></p>
+                <p>{{ content.location }}</p>
+                <p>{{ content.contact }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 
 </section>

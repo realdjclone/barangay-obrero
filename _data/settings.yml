@@ -5,8 +5,8 @@
     navs:
     - {name: News and Events , url: '.section-news-and-events', icon: 'icon-nae.html'}
     - {name: About Us, url: '.section-about-us', icon: 'icon-about.html'}
-    - {name: Contact Us, url: '#contact-us', icon: 'icon-contact.html'}
     - {name: Hotlines and Links, url: '.section-hotlines-and-links', icon: 'icon-links.html'}
+    - {name: Contact Us, url: '.section-contact-us', icon: 'icon-contact.html'}
     # - {name: Others, url: '#others', icon: ''}
 
     news-name: News
